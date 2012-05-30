@@ -21,10 +21,10 @@ public class KnownDefectsSensor implements Sensor {
         ProjectFileSystem projectFileSystem = project.getFileSystem();
         final List<InputFile> testSources = projectFileSystem.testFiles(Java.SUFFIXES);
         for (final InputFile inputFile : testSources) {
-            logger.info("Looking at file: " + inputFile.toString());
-            JavaFile javaFile = JavaFile.fromIOFile(inputFile.getFile(), projectFileSystem.getTestDirs(), true);
+            //logger.info("Looking at file: " + inputFile.toString());
+            final JavaFile javaFile = JavaFile.fromIOFile(inputFile.getFile(), projectFileSystem.getTestDirs(), true);
             if (null != javaFile) {
-
+                logger.info("Looking at class: " + javaFile.getName());
             }
         }
     }

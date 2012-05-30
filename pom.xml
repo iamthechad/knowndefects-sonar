@@ -55,6 +55,11 @@
             <version>2.10</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.codehaus.sonar</groupId>
+            <artifactId>sonar-dev-maven-plugin</artifactId>
+            <version>1.4</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -67,6 +72,11 @@
                 <configuration>
                     <pluginClass>com.megatome.knowndefects.sonar.KnownDefectsPlugin</pluginClass>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.sonar</groupId>
+                <artifactId>sonar-dev-maven-plugin</artifactId>
+                <version>1.4</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
