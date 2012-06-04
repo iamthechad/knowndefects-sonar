@@ -1,0 +1,9 @@
+<rules>
+    <rule>
+        <key>com.megatome.knowndefects.sonar.AnnotationCountCheck</key>
+        <name>Annotation Count Check</name>
+        <configKey>Checker/TreeWalker/com.megatome.knowndefects.sonar.AnnotationCountCheck</configKey>
+        <category name="Usability"/>
+        <description>Count KnownDefect Annotations</description>
+    </rule>
+</rules>
